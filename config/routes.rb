@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-get 'feeds/index' => 'feeds#index'
+get 'pages/home' => 'pages#home'
 
 resources :feeds
+resources :pages
 
-root 'feeds#index'
+root 'pages#home'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
